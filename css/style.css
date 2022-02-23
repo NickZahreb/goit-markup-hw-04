@@ -294,9 +294,18 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--primery-bk-color);
 }
-.card-team {
+.social-icon {
+  fill: var(--icon-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-icon,
+.social-list-link:focus .social-icon {
+  fill: var(--primery-bk-color);
 }
 
 /* НАШІ КЛІЄНТИ */
@@ -314,16 +323,19 @@ ul {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
   /* padding: 16px 32px; */
-  fill: var(--accent-color);
+  fill: var(--icon-color);
 }
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+.clients-icon:hover {
+  fill: var(--totle-text-color);
 }
 .clients-icon:hover,
 .clients-icon:focus {
@@ -404,6 +416,9 @@ ul {
 }
 .link-footer {
   background: rgba(255, 255, 255, 0.1);
+}
+.s-icon {
+  fill: var(--primery-bk-color);
 }
 
 /* Фокус Ховер для адреси у Футері */
