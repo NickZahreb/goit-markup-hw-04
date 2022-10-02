@@ -142,7 +142,6 @@ ul {
   color: rgb(47, 48, 58);
 
   background-image: linear-gradient(
-      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
@@ -375,6 +374,8 @@ ul {
   letter-spacing: 0.03em;
 }
 .product-list .lead {
+  max-width: 370px;
+
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -484,11 +485,9 @@ ul {
 
 /* .address-list .item:not(:last-child) */
 /* Social */
-.section-social {
-  display: inline-flex;
-}
+
 .section-social .text {
-  /* margin-top: 72px; */
+  margin-bottom: 20px;
   color: var(--hero-text);
 
   font-weight: 700;
@@ -499,4 +498,11 @@ ul {
 }
 .social-list {
   display: flex;
+}
+
+.social-list .icon {
+  width: 44px;
+  height: 44px;
+
+  color: #ffffff;
 }
