@@ -498,11 +498,15 @@ ul {
 }
 .social-list {
   display: flex;
-}
+  padding: 0;
+  margin: 0;
 
-.social-list .icon {
+  outline: 1px solid #ffffff;
+}
+.social-list .link {
+  display: block;
   width: 44px;
   height: 44px;
-
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
